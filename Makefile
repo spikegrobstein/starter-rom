@@ -8,6 +8,12 @@ sprite_varfile=$(srcdir)/sprite_vars.inc
 
 sourcefiles= \
 	$(srcdir)/$(project).s
+	$(bg_varfile) \
+	$(sprite_varfile) \
+	$(srcdir)/zeropage.inc \
+	$(srcdir)/tiles.inc \
+	$(srcdir)/rodata.inc \
+	$(srcdir)/main.inc
 
 background_images= \
 	$(imgdir)/bg_tiles.png
