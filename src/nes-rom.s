@@ -111,6 +111,8 @@ vblankwait:
   bpl vblankwait
   rts
 
+.include "main.inc"
+
 irq:
   rti
 
@@ -152,9 +154,3 @@ nmi:
 
   rti
 
-init:
-
-
-
-forever:
-  jmp forever
