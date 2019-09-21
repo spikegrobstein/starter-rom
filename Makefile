@@ -27,8 +27,8 @@ $(project).nes: $(project).o $(project).cfg
 $(project).o: $(sourcefiles) $(chrfiles)
 	ca65 $(srcdir)/$(project).s -g -o $(project).o
 
-$(bg_varfile): $(imdir)/background.png
-$(sprite_varfile): $(imdir)/sprites.png
+$(bg_varfile): $(imgdir)/background.png
+$(sprite_varfile): $(imgdir)/sprites.png
 
 $(imgdir)/sprites.png: $(sprite_images)
 	tilec --varfile $(sprite_varfile) --outfile $@ $^
