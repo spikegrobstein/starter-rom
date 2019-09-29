@@ -7,7 +7,7 @@ bg_varfile=$(srcdir)/bg_vars.inc
 sprite_varfile=$(srcdir)/sprite_vars.inc
 
 sourcefiles= \
-	$(srcdir)/$(project).s
+	$(srcdir)/$(project).s \
 	$(bg_varfile) \
 	$(sprite_varfile) \
 	$(srcdir)/zeropage.inc \
