@@ -130,7 +130,7 @@ nmi:
 
   inc nmi_lock
 
-  ; why am I doing this again?
+  ; trigger the OAM sprite transfer to PPU
   lda #$00
   sta OAMADDR ; set low byte of ram address
   lda #$02
