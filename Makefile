@@ -49,7 +49,7 @@ $(srcdir)/background.chr: $(imgdir)/background.png
 	png2chr --size 256 --outdir $(srcdir) $^
 
 run: $(project).nes
-	fceux $^
+	mesen $^
 
 clean:
 	rm -rf \
